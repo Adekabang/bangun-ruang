@@ -7,6 +7,10 @@
         "php": "^7.2.5",
         "illuminate/support": "^7.0"
     },
+    "require-dev": {
+        "orchestra/testbench": "^5.1",
+        "phpunit/phpunit": "^8.5"
+    },
     "license": "MIT",
     "authors": [
         {
@@ -19,6 +23,11 @@
     "autoload": {
         "psr-4": {
             "adekabang\\BangunRuang\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "adekabang\\BangunRuang\\Tests\\": "tests/"
         }
     },
     "extra":{
