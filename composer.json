@@ -1,0 +1,34 @@
+{
+    "name": "adekabang/bangun-ruang",
+    "description": "Simple Library for calculate area of shape",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/support": "^7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammad Raska",
+            "email": "iban.ninja@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "adekabang\\BangunRuang\\": "src/"
+        }
+    },
+    "extra":{
+        "laravel": {
+            "providers":[
+                "adekabang\\BangunRuang\\Providers\\BangunRuangServiceProvider"
+            ]
+        },
+        "aliases": {
+            "PersegiPanjang": "adekabang\\BangunRuang\\Facades\\PersegiPanjang"
+        }
+    }
+}
